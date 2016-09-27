@@ -1,0 +1,33 @@
+[{
+	"ID": 1,
+	"TileName": "SignPO",
+	"TileIcon": "signature",
+    "TileNumber": 1,
+    "TileNumberUnit": "Ordine",
+    "TileTitle": "Firma Ordini",
+    "TileInfo": "Da Firmare",
+    "TileInfoState": "Success",
+    "TileApp": "zdemo"
+ },
+ {
+	"ID": 2,	
+	"TileName": "ApproveCart",		
+	"TileIcon": "cart-approval",
+    "TileNumber": "525",
+    "TileNumberUnit": "Euro",
+    "TileTitle": "Approvazione Carrelli",
+    "TileInfo": "Da Approvare",
+    "TileInfoState": "Warning",
+    "TileApp": "zdemo"
+},
+{
+	"ID": 3,	
+	"TileName": "RetailStore",		
+	"TileIcon": "retail-store",
+    "TileNumber": "5",    
+    "TileNumberUnit": "Richieste",
+    "TileTitle": "Approvazione Gadget",
+    "TileInfo": "Richieste",
+    "TileInfoState": "Success",
+    "TileApp": "zdemo"
+}]
