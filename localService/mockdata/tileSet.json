@@ -7,7 +7,7 @@
     "TileTitle": "Firma Ordini",
     "TileInfo": "Da Firmare",
     "TileInfoState": "Success",
-    "TileApp": "zdemo"
+    "TileApp": "zmockopenui5"
  },
  {
 	"ID": 2,	
@@ -18,7 +18,7 @@
     "TileTitle": "Approvazione Carrelli",
     "TileInfo": "Da Approvare",
     "TileInfoState": "Warning",
-    "TileApp": "zdemo"
+    "TileApp": "zmockopenui5"
 },
 {
 	"ID": 3,	
@@ -29,5 +29,5 @@
     "TileTitle": "Approvazione Gadget",
     "TileInfo": "Richieste",
     "TileInfoState": "Success",
-    "TileApp": "zdemo"
+    "TileApp": "zmockopenui5"
 }]
