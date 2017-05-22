@@ -1,0 +1,33 @@
+{
+  "_version": "1.1.0",
+  "sap.app": {
+	"_version": "1.1.0",
+	"id": "sap.ui.demopad",
+	"type": "application",
+	"i18n": "i18n/i18n.properties",
+	"title": "{{appTitle}}",
+	"description": "{{appDescription}}",
+	"applicationVersion": { "version": "1.0.0" },
+	"dataSources": { "userTileRemote": { "uri": "https://services.odata.org/usertile.svc/", "type": "OData", "settings": { "odataVersion": "2.0" } } }
+  },
+  "sap.ui": {
+	"_version": "1.1.0",
+	"technology": "UI5",
+	"deviceTypes": { "desktop": true, "tablet": true, "phone": true },
+	"supportedThemes": ["sap_bluecrystal"]
+  },
+  "sap.ui5": {
+	"_version": "1.1.0",
+	"rootView": "sap.ui.demopad.view.app",
+	"dependencies": { "minUI5Version": "1.30", "libs": { "sap.m": {} } },
+    "models": {
+	    "i18n": { "type": "sap.ui.model.resource.ResourceModel", "settings": { "bundleName": "sap.ui.demopad.i18n.i18n" } },
+		"tile": { "dataSource": "userTileRemote" }
+    },
+    "routing": { "config": { "routerClass": "sap.m.routing.Router", "viewType": "XML", "viewPath": "sap.ui.demopad.view", "transition": "slide", "greedy": "false" },
+                 "routes": [ { "pattern": "", "name": "app", "target": "tilepad", "targetControl": "padApp" } ],
+                 "targets": { "tilepad": { "viewName": "app", "viewLevel": 1, "controlId": "padApp", "controlAggregation" : "pages" } }
+               },
+	"resources": { "css": [ { "uri": "css/style.css" } ] }	
+  }
+}
